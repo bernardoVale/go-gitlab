@@ -602,6 +602,8 @@ type AcceptMergeRequestOptions struct {
 	ShouldRemoveSourceBranch  *bool   `url:"should_remove_source_branch,omitempty" json:"should_remove_source_branch,omitempty"`
 	MergeWhenPipelineSucceeds *bool   `url:"merge_when_pipeline_succeeds,omitempty" json:"merge_when_pipeline_succeeds,omitempty"`
 	SHA                       *string `url:"sha,omitempty" json:"sha,omitempty"`
+	SquashCommitMessage       *string `url:"squash_commit_message,omitempty" json:"squash_commit_message,omitempty"`
+	Squash                    *bool   `url:"squash,omitempty" json:"squash,omitempty"`
 }
 
 // AcceptMergeRequest merges changes submitted with MR using this API. If merge
