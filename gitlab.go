@@ -587,8 +587,6 @@ func (c *Client) NewRequest(method, path string, opt interface{}, options []Opti
 		if err != nil {
 			return nil, err
 		}
-		msg := string(bodyBytes)
-		fmt.Println(msg)
 		bodyReader := bytes.NewReader(bodyBytes)
 
 		u.RawQuery = ""
